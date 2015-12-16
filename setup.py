@@ -8,7 +8,7 @@ README = os.path.join(os.path.dirname(__file__), 'README.rst')
 
 setup(
     name='python-decouple-plus',
-    version='1.0',
+    version='1.0.0',
     description='Addons for python-decouple',
     long_description=open(README).read(),
     author="Juan J. Brown",
