@@ -1,0 +1,14 @@
+language: python
+env:
+- TOXENV=py27
+install:
+- pip install tox==1.7.0
+script: tox
+deploy:
+  provider: pypi
+  user: juanjbrown
+  password:
+    secure: RMFLlI5Y9Bhntg1A9MQdoNhcgmCOril1aLJKw3Ji1OcOMkQHzSsMjRtOpxTKZnnlb7HU6SPmKBy7TNHoIOPrrUXdcXKaEDLzYezB0/XzCQNvx4AFVQB2i2LTtiwCIolYw89fDZ2gB+nZBt1NT6LFyNMm7ngA4HFXNHMClke/w5/gSK0fnC2vrbKncScEwERyBMK8pngOhLrIpj7KAwwoOr3od2Pl/smMy8DymSHJJzhzUF10ysXXHLsrNMLEYJNCCsDyesG9LUxjNE7eKXq9JkQpTUOOwyXtJ9RTBiqtX/fbrLJ5a5gXJx64WzJGnkEx/PvPVpWRUoXg+z9xBLZl4xDae5CBkrpXvK3nepBSengQDLr6vWW3k0BSl7GH//k6DmGoia3G2PLIQBa1meGGzwUfXNpfLJJNEhpGKlZiOckGuaMtRyDnn7T6q3CUsc/RjCfbJNcHumUQWAZvYCHkEg+ck505za7aSotDHJJAF09grT5EkVZHXGbtr4R92jmW0h5Wb/grNR7iXuTWxBzzETBoAH5uafA6+H+h+bnBxyGIaphhReURGVXv/BwlxO1EiBov4g5/cQCG83qJADO6LOa9H2szks0chpl8tgwzMZQ51llJYt10KqGE1475v1UbLMDBYcZqPWhJ74Jb1qFXUKVrxZBAzla2Yv9OsprS78k=
+  on:
+    tags: true
+    repo: juanjbrown/python-decouple-plus
